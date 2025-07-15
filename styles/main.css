@@ -737,3 +737,71 @@ li:hover:before {
 .list-style {
     line-height: 1.8;
 }
+/* Секция клиентов */
+.client-section {
+    margin: 80px 0;
+    text-align: center;
+}
+
+.client-section h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2d2926;
+}
+
+.client-proof {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.highlight-text {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #2d2926;
+}
+
+.description-text {
+    font-size: 20px;
+    color: #5a5047;
+    line-height: 1.6;
+}
+
+.accent-text {
+    color: #d4b39f;
+    font-weight: 500;
+}
+
+/* Улучшенный about-me-box */
+.about-me-box {
+    background: #ffffff;
+    border: 2px solid #f0e8e0;
+    padding: 60px;
+    border-radius: 20px;
+    margin-top: 60px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(212, 179, 159, 0.1);
+}
+
+.about-content {
+    margin-bottom: 50px;
+}
+
+.about-content p {
+    font-size: 20px;
+    color: #5a5047;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f0e8e0;
+}
+
+.about-footer p {
+    font-size: 18px;
+    color: #7a6f63;
+    margin-bottom: 12px;
+}
