@@ -1,115 +1,51 @@
-/* Responsive Design */
+/* Responsive Design - Mobile First Approach */
 
-/* Large tablets and small desktops */
-@media (max-width: 1024px) {
-    .terms-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        justify-items: center;
-    }
-    
-    .why-cards {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        justify-items: center;
-    }
-    
-    .proof-metrics {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        justify-items: center;
-    }
-    
-    .strategy-cards {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        justify-items: center;
-    }
-    
-    .about-stats {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        justify-items: center;
-    }
-    
-    .growth-visual {
-        grid-template-columns: 1fr;
-        padding: 40px 30px;
-        gap: 30px;
-        justify-items: center;
-    }
-    
-    .arrow {
-        transform: rotate(90deg);
-        margin: 15px 0;
-    }
-    
-    .state-box {
-        padding: 25px;
-    }
-}
-
-/* Tablets */
-@media (max-width: 768px) {
+/* Base mobile styles (320px+) */
+@media (max-width: 480px) {
     section {
-        padding: 60px 15px;
-        min-height: auto;
+        padding: clamp(40px, 8vw, 60px) clamp(12px, 3vw, 16px);
     }
     
     .container {
-        padding: 0 10px;
+        padding: 0 clamp(12px, 2vw, 16px);
     }
     
-    h1 {
-        font-size: 42px;
+    /* Hero adjustments */
+    .hero::before,
+    .hero::after {
+        display: none;
     }
     
-    h2 {
-        font-size: 32px;
-        margin-bottom: 30px;
+    .hero-info {
+        margin-top: clamp(32px, 6vw, 40px);
     }
     
-    h3 {
-        font-size: 24px;
-    }
-    
-    p {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    
-    .proof-metrics {
+    /* Grid adjustments */
+    .why-cards,
+    .proof-metrics,
+    .strategy-cards,
+    .terms-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-        justify-items: center;
-    }
-    
-    .strategy-cards {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        justify-items: center;
+        gap: clamp(16px, 3vw, 24px);
+        max-width: 100%;
     }
     
     .about-stats {
         grid-template-columns: 1fr;
-        gap: 30px;
-        justify-items: center;
+        gap: clamp(20px, 4vw, 24px);
     }
     
+    /* Growth visual mobile */
     .growth-visual {
         grid-template-columns: 1fr;
-        padding: 30px 20px;
-        gap: 30px;
-        justify-items: center;
-    }
-    
-    .state-box {
-        padding: 25px;
+        padding: clamp(24px, 4vw, 32px) clamp(16px, 3vw, 20px);
+        gap: clamp(20px, 4vw, 24px);
     }
     
     .arrow {
         transform: rotate(90deg);
-        margin: 10px 0;
+        margin: clamp(8px, 2vw, 12px) 0;
+        font-size: clamp(24px, 4vw, 32px);
     }
     
     /* Timeline mobile */
@@ -119,7 +55,7 @@
     
     .timeline-item {
         grid-template-columns: 1fr;
-        margin-bottom: 30px;
+        margin-bottom: clamp(24px, 4vw, 32px);
         justify-items: center;
     }
     
@@ -127,296 +63,250 @@
         display: none;
     }
     
-    .timeline-content {
-        padding: 25px;
-    }
-    
     .timeline-date {
         background: #d4b39f;
         color: white;
         display: inline-block;
-        padding: 6px 16px;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        font-size: 12px;
+        padding: clamp(4px, 1vw, 6px) clamp(12px, 2vw, 16px);
+        border-radius: 16px;
+        margin-bottom: clamp(12px, 2vw, 16px);
+        font-size: clamp(10px, 1.5vw, 12px);
     }
     
-    /* Cards mobile */
-    .why-card,
-    .proof-metric,
-    .term-card {
-        padding: 30px 20px;
-    }
-    
-    .secret-box {
-        padding: 40px 25px;
-    }
-    
-    .about-me-box {
-        padding: 35px 25px;
-    }
-    
-    .info-card {
-        padding: 30px 20px;
-    }
-    
-    .strategy-hero-card {
-        padding: 40px 25px;
-    }
-    
-    .currency-advantage-card {
-        padding: 35px 25px;
-    }
-    
-    /* Hero mobile */
-    .hero::before,
-    .hero::after {
-        display: none;
-    }
-    
-    .accent-line {
-        margin: 30px auto;
-    }
-    
-    .hero-info {
-        margin-top: 40px;
-    }
-    
-    /* Contact buttons */
+    /* Contact buttons mobile */
     .contact-buttons {
         flex-direction: column;
-        gap: 15px;
-        align-items: center;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    
-    .contact-btn {
-        width: 280px;
-        padding: 16px 30px;
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-    section {
-        padding: 40px 10px;
-    }
-    
-    .container {
-        padding: 0 5px;
-    }
-    
-    h1 {
-        font-size: 36px;
-    }
-    
-    h2 {
-        font-size: 28px;
-        margin-bottom: 25px;
-    }
-    
-    h3 {
-        font-size: 22px;
-    }
-    
-    p {
-        font-size: 16px;
-        margin-bottom: 18px;
-    }
-    
-    .why-value,
-    .proof-value {
-        font-size: 36px;
-    }
-    
-    .state-value {
-        font-size: 36px;
-    }
-    
-    .term-value {
-        font-size: 32px;
-    }
-    
-    .about-stat-value {
-        font-size: 28px;
-    }
-    
-    .contact-buttons {
-        flex-direction: column;
-        width: 100%;
-        gap: 12px;
+        gap: clamp(12px, 2vw, 16px);
         align-items: center;
         max-width: 280px;
         margin: 0 auto;
     }
     
     .contact-btn {
-        width: 260px;
-        padding: 14px 20px;
-        font-size: 16px;
+        width: 100%;
+        max-width: 260px;
+        min-width: auto;
+        flex: none;
     }
     
-    .timeline-content h3 {
-        font-size: 20px;
-    }
-    
-    .timeline-content p {
-        font-size: 16px;
-    }
-    
-    .secret-box h3 {
-        font-size: 24px;
-    }
-    
-    .secret-box p {
-        font-size: 18px;
-    }
-    
-    .strategy-hero-card h3 {
-        font-size: 26px;
-    }
-    
-    .strategy-hero-card p {
-        font-size: 18px;
-    }
-    
+    /* Card adjustments */
     .why-card,
     .proof-metric,
-    .term-card {
-        padding: 25px 15px;
-    }
-    
-    .secret-box {
-        padding: 30px 20px;
-    }
-    
-    .about-me-box {
-        padding: 30px 20px;
-    }
-    
-    .info-card {
-        padding: 25px 15px;
-    }
-    
-    .strategy-hero-card {
-        padding: 30px 20px;
-    }
-    
-    .currency-advantage-card {
-        padding: 30px 20px;
-    }
-    
-    .growth-visual {
-        padding: 25px 15px;
-        gap: 25px;
-    }
-    
-    .state-box {
-        padding: 20px;
-    }
-    
-    .state-title {
-        font-size: 16px;
+    .term-card,
+    .strategy-card {
+        max-width: 100%;
+        width: 100%;
+        min-height: auto;
+        padding: clamp(24px, 4vw, 32px) clamp(16px, 3vw, 20px);
     }
     
     .timeline-content {
-        padding: 20px;
+        min-height: auto;
+        padding: clamp(20px, 3vw, 24px);
     }
     
-    .hero-info {
-        margin-top: 30px;
-        font-size: 14px;
-    }
-    
-    .subtitle {
-        font-size: 20px;
-        margin-bottom: 40px;
-    }
-    
-    .accent-line {
-        margin: 25px auto;
-        width: 50px;
+    .state-box {
+        max-width: 100%;
+        min-height: auto;
+        padding: clamp(20px, 3vw, 24px);
     }
 }
 
-/* Extra small devices */
-@media (max-width: 360px) {
-    section {
-        padding: 30px 8px;
+/* Small tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .why-cards {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        max-width: 600px;
     }
     
-    h1 {
-        font-size: 32px;
+    .proof-metrics {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        max-width: 600px;
     }
     
-    h2 {
-        font-size: 26px;
+    .strategy-cards {
+        grid-template-columns: 1fr;
+        max-width: 500px;
     }
     
-    h3 {
-        font-size: 20px;
+    .terms-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        max-width: 700px;
     }
     
-    p {
-        font-size: 15px;
-    }
-    
-    .why-value,
-    .proof-value,
-    .term-value {
-        font-size: 30px;
-    }
-    
-    .state-value {
-        font-size: 32px;
-    }
-    
-    .about-stat-value {
-        font-size: 24px;
-    }
-    
-    .contact-btn {
-        padding: 12px 18px;
-        font-size: 15px;
-    }
-    
-    .secret-box {
-        padding: 25px 15px;
-    }
-    
-    .about-me-box {
-        padding: 25px 15px;
-    }
-    
-    .strategy-hero-card {
-        padding: 25px 15px;
-    }
-    
-    .currency-advantage-card {
-        padding: 25px 15px;
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
     }
     
     .growth-visual {
-        padding: 20px 10px;
+        grid-template-columns: 1fr;
+        max-width: 600px;
     }
     
-    .state-box {
-        padding: 15px;
+    .arrow {
+        transform: rotate(90deg);
+        margin: clamp(12px, 2vw, 16px) 0;
     }
     
-    .timeline-content {
-        padding: 15px;
+    .contact-buttons {
+        flex-direction: row;
+        max-width: 500px;
+        gap: clamp(12px, 2vw, 16px);
     }
     
-    .why-card,
-    .proof-metric,
-    .term-card {
-        padding: 20px 12px;
+    .contact-btn {
+        flex: 1;
+        max-width: 150px;
+    }
+}
+
+/* Large tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .why-cards {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        max-width: 900px;
     }
     
-    .info-card {
-        padding: 20px 12px;
+    .proof-metrics {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 700px;
+    }
+    
+    .strategy-cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+    
+    .terms-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+    
+    .growth-visual {
+        grid-template-columns: 1fr auto 1fr;
+        max-width: 900px;
+    }
+    
+    .arrow {
+        transform: none;
+        margin: 0;
+    }
+    
+    .timeline-item {
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(32px, 4vw, 48px);
+    }
+    
+    .timeline::before {
+        display: block;
+    }
+    
+    .timeline-dot {
+        display: block;
+    }
+    
+    .timeline-date {
+        background: none;
+        color: #b09680;
+        display: block;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
+/* Desktop (1025px+) */
+@media (min-width: 1025px) {
+    .why-cards {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+    }
+    
+    .proof-metrics {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+    }
+    
+    .strategy-cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
+    
+    .terms-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+    
+    .growth-visual {
+        grid-template-columns: 1fr auto 1fr;
+        max-width: 1000px;
+    }
+    
+    .contact-buttons {
+        flex-direction: row;
+        max-width: 600px;
+    }
+    
+    .contact-btn {
+        flex: 1;
+        max-width: 180px;
+    }
+}
+
+/* Large desktop (1200px+) */
+@media (min-width: 1200px) {
+    section {
+        padding: clamp(80px, 8vw, 120px) clamp(32px, 4vw, 40px);
+    }
+    
+    .container {
+        max-width: 1200px;
+        padding: 0 clamp(24px, 3vw, 40px);
+    }
+    
+    .why-cards,
+    .proof-metrics,
+    .strategy-cards,
+    .terms-grid {
+        gap: clamp(32px, 3vw, 40px);
+    }
+    
+    .growth-visual {
+        gap: clamp(40px, 4vw, 48px);
+        padding: clamp(50px, 6vw, 60px);
+    }
+    
+    .timeline-item {
+        gap: clamp(48px, 6vw, 60px);
+    }
+}
+
+/* Ultra-wide screens (1400px+) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .why-cards {
+        max-width: 1200px;
+    }
+    
+    .growth-visual {
+        max-width: 1200px;
+    }
+    
+    .timeline {
+        max-width: 1200px;
     }
 }
 
@@ -424,21 +314,21 @@
 @media (max-height: 600px) and (orientation: landscape) {
     section {
         min-height: auto;
-        padding: 40px 20px;
+        padding: clamp(32px, 4vw, 48px) clamp(16px, 3vw, 24px);
     }
     
     .hero {
         min-height: 100vh;
+        padding: clamp(40px, 6vw, 60px) clamp(16px, 3vw, 24px);
     }
     
     .hero-info {
-        margin-top: 30px;
+        margin-top: clamp(24px, 4vw, 32px);
     }
 }
 
 /* High resolution displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    /* Optimize for retina displays */
     .accent-line {
         height: 1px;
     }
@@ -449,6 +339,38 @@
     
     .term-card::before {
         height: 2px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .contact-btn {
+        min-height: 48px;
+        padding: clamp(16px, 2vw, 18px) clamp(24px, 4vw, 32px);
+    }
+    
+    .why-card,
+    .proof-metric,
+    .term-card,
+    .strategy-card {
+        min-height: 48px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .why-card:hover,
+    .proof-metric:hover,
+    .term-card:hover,
+    .strategy-card:hover,
+    .timeline-content:hover,
+    .state-box:hover {
+        transform: none;
+        box-shadow: 0 8px 32px rgba(212, 179, 159, 0.12);
+    }
+    
+    .contact-btn:hover {
+        transform: none;
+        background: rgba(255,255,255,0.2);
+        box-shadow: none;
     }
 }
 
@@ -474,13 +396,17 @@
     section {
         break-inside: avoid;
         page-break-inside: avoid;
+        padding: 20px;
     }
     
     h1, h2, h3 {
         page-break-after: avoid;
     }
     
-    .timeline-content {
+    .timeline-content,
+    .why-card,
+    .proof-metric,
+    .term-card {
         break-inside: avoid;
         page-break-inside: avoid;
     }
@@ -529,28 +455,43 @@
     }
 }
 
-
-/* Touch device optimizations */
-@media (hover: none) and (pointer: coarse) {
-    .contact-btn {
-        min-height: 48px;
-        padding: 16px 32px;
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    .light-bg {
+        background: #1a1a1a;
+    }
+    
+    .alt-bg {
+        background: #2a2a2a;
     }
     
     .why-card,
     .proof-metric,
     .term-card,
-    .strategy-card {
-        min-height: 48px;
+    .timeline-content,
+    .strategy-card,
+    .info-card,
+    .about-me-box,
+    .currency-advantage-card,
+    .state-box {
+        background: #2a2a2a;
+        border-color: #404040;
     }
     
-    /* Remove hover effects on touch devices */
-    .why-card:hover,
-    .proof-metric:hover,
-    .term-card:hover,
-    .strategy-card:hover,
-    .timeline-content:hover,
-    .state-box:hover {
-        transform: none;
+    .growth-visual {
+        background: #2a2a2a;
+    }
+    
+    p, .why-desc, .proof-label, .about-stat-label {
+        color: #b0b0b0;
+    }
+    
+    h1, h2, h3, .why-label, .timeline-content h3 {
+        color: #e0e0e0;
     }
 }
