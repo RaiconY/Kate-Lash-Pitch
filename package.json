@@ -1,0 +1,104 @@
+{
+  "name": "lash-studio-pattaya-pitch",
+  "version": "2.0.0",
+  "description": "Investment pitch deck for Lash Studio Pattaya - Modern web presentation for attracting investors",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -c-1",
+    "dev": "npx live-server --port=8000 --entry-file=index.html",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "npx cleancss -o styles/main.min.css styles/main.css styles/animations.css styles/responsive.css",
+    "minify:js": "npx uglifyjs scripts/main.js -o scripts/main.min.js --compress --mangle",
+    "lint:css": "npx stylelint \"styles/*.css\"",
+    "lint:js": "npx eslint scripts/*.js",
+    "validate": "npx html-validate index.html",
+    "test": "npm run lint:css && npm run lint:js && npm run validate",
+    "deploy": "npm run build && echo 'Ready for deployment'",
+    "clean": "rm -f styles/*.min.css scripts/*.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaiconY/Kate-Lash-Pitch.git"
+  },
+  "keywords": [
+    "lash-studio",
+    "pattaya",
+    "investment",
+    "pitch-deck",
+    "thailand",
+    "beauty-business",
+    "investor-presentation",
+    "web-presentation"
+  ],
+  "author": {
+    "name": "Ekaterina Sokolova",
+    "email": "kate@lashstudio-pattaya.com",
+    "url": "https://lashstudio-pattaya.com"
+  },
+  "contributors": [
+    {
+      "name": "Development Team",
+      "email": "dev@lashstudio-pattaya.com"
+    }
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://RaiconY.github.io/Kate-Lash-Pitch",
+  "bugs": {
+    "url": "https://github.com/RaiconY/Kate-Lash-Pitch/issues"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.57.0",
+    "html-validate": "^8.7.4",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "stylelint": "^15.11.0",
+    "uglify-js": "^3.17.4"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "config": {
+    "port": 8000,
+    "host": "localhost"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/RaiconY"
+  },
+  "categories": [
+    "Business",
+    "Investment",
+    "Presentation",
+    "Beauty Industry"
+  ],
+  "tags": [
+    "pitch-deck",
+    "investment",
+    "thailand",
+    "pattaya",
+    "lash-extensions",
+    "beauty-salon",
+    "business-presentation"
+  ],
+  "meta": {
+    "target_audience": "Investors",
+    "business_model": "B2C Service",
+    "location": "Pattaya, Thailand",
+    "industry": "Beauty & Wellness",
+    "stage": "Growth",
+    "investment_amount": "900,000 THB",
+    "roi_period": "21 months",
+    "monthly_revenue": "120,000 THB",
+    "monthly_profit": "50,000 THB",
+    "margin": "42%"
+  }
+}
