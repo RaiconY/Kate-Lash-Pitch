@@ -1,0 +1,575 @@
+/* Responsive Design */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+    .terms-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .why-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .proof-metrics {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .strategy-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .growth-visual {
+        grid-template-columns: 1fr;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+    
+    .arrow {
+        transform: rotate(90deg);
+        margin: 15px 0;
+    }
+    
+    .state-box {
+        padding: 25px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 42px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .proof-metrics {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .strategy-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .growth-visual {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    
+    .state-box {
+        padding: 25px;
+    }
+    
+    .arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    
+    /* Timeline mobile */
+    .timeline::before {
+        display: none;
+    }
+    
+    .timeline-item {
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-dot {
+        display: none;
+    }
+    
+    .timeline-content {
+        padding: 25px;
+    }
+    
+    .timeline-date {
+        background: #d4b39f;
+        color: white;
+        display: inline-block;
+        padding: 6px 16px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    
+    /* Cards mobile */
+    .why-card,
+    .proof-metric,
+    .term-card {
+        padding: 30px 20px;
+    }
+    
+    .secret-box {
+        padding: 40px 25px;
+    }
+    
+    .about-me-box {
+        padding: 35px 25px;
+    }
+    
+    .info-card {
+        padding: 30px 20px;
+    }
+    
+    .strategy-hero-card {
+        padding: 40px 25px;
+    }
+    
+    .currency-advantage-card {
+        padding: 35px 25px;
+    }
+    
+    /* Hero mobile */
+    .hero::before,
+    .hero::after {
+        display: none;
+    }
+    
+    .accent-line {
+        margin: 30px auto;
+    }
+    
+    .hero-info {
+        margin-top: 40px;
+    }
+    
+    /* Contact buttons */
+    .contact-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-btn {
+        width: 100%;
+        padding: 16px 30px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    section {
+        padding: 40px 10px;
+    }
+    
+    .container {
+        padding: 0 5px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    
+    .why-value,
+    .proof-value {
+        font-size: 36px;
+    }
+    
+    .state-value {
+        font-size: 36px;
+    }
+    
+    .term-value {
+        font-size: 32px;
+    }
+    
+    .about-stat-value {
+        font-size: 28px;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .contact-btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 20px;
+    }
+    
+    .timeline-content p {
+        font-size: 16px;
+    }
+    
+    .secret-box h3 {
+        font-size: 24px;
+    }
+    
+    .secret-box p {
+        font-size: 18px;
+    }
+    
+    .strategy-hero-card h3 {
+        font-size: 26px;
+    }
+    
+    .strategy-hero-card p {
+        font-size: 18px;
+    }
+    
+    .why-card,
+    .proof-metric,
+    .term-card {
+        padding: 25px 15px;
+    }
+    
+    .secret-box {
+        padding: 30px 20px;
+    }
+    
+    .about-me-box {
+        padding: 30px 20px;
+    }
+    
+    .info-card {
+        padding: 25px 15px;
+    }
+    
+    .strategy-hero-card {
+        padding: 30px 20px;
+    }
+    
+    .currency-advantage-card {
+        padding: 30px 20px;
+    }
+    
+    .growth-visual {
+        padding: 25px 15px;
+        gap: 25px;
+    }
+    
+    .state-box {
+        padding: 20px;
+    }
+    
+    .state-title {
+        font-size: 16px;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .hero-info {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .accent-line {
+        margin: 25px auto;
+        width: 50px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    section {
+        padding: 30px 8px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    .why-value,
+    .proof-value,
+    .term-value {
+        font-size: 30px;
+    }
+    
+    .state-value {
+        font-size: 32px;
+    }
+    
+    .about-stat-value {
+        font-size: 24px;
+    }
+    
+    .contact-btn {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+    
+    .secret-box {
+        padding: 25px 15px;
+    }
+    
+    .about-me-box {
+        padding: 25px 15px;
+    }
+    
+    .strategy-hero-card {
+        padding: 25px 15px;
+    }
+    
+    .currency-advantage-card {
+        padding: 25px 15px;
+    }
+    
+    .growth-visual {
+        padding: 20px 10px;
+    }
+    
+    .state-box {
+        padding: 15px;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .why-card,
+    .proof-metric,
+    .term-card {
+        padding: 20px 12px;
+    }
+    
+    .info-card {
+        padding: 20px 12px;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    section {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+    
+    .hero {
+        min-height: 100vh;
+    }
+    
+    .hero-info {
+        margin-top: 30px;
+    }
+}
+
+/* High resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize for retina displays */
+    .accent-line {
+        height: 1px;
+    }
+    
+    .timeline::before {
+        width: 1px;
+    }
+    
+    .term-card::before {
+        height: 2px;
+    }
+}
+
+/* Print styles */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+    
+    .hero::before,
+    .hero::after,
+    .secret-box::before,
+    .strategy-hero-bg {
+        display: none !important;
+    }
+    
+    .contact-buttons {
+        display: none;
+    }
+    
+    section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    .timeline-content {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero::before,
+    .hero::after {
+        animation: none;
+    }
+    
+    .arrow {
+        animation: none;
+    }
+    
+    .secret-box::before,
+    .strategy-hero-bg {
+        animation: none;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .why-card,
+    .proof-metric,
+    .term-card,
+    .timeline-content,
+    .strategy-card,
+    .info-card,
+    .about-me-box,
+    .currency-advantage-card {
+        border: 2px solid #000;
+    }
+    
+    .secret-box,
+    .strategy-hero-card,
+    .cta-section {
+        border: 2px solid #fff;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #f0f0f0;
+    }
+    
+    .light-bg {
+        background: #1a1a1a;
+    }
+    
+    .alt-bg {
+        background: #222;
+    }
+    
+    .why-card,
+    .proof-metric,
+    .term-card,
+    .timeline-content,
+    .strategy-card,
+    .info-card,
+    .about-me-box,
+    .currency-advantage-card,
+    .state-box {
+        background: #2a2a2a;
+        color: #f0f0f0;
+    }
+    
+    .timeline::before {
+        background: linear-gradient(to bottom, #333 0%, #d4b39f 50%, #333 100%);
+    }
+    
+    .timeline-dot {
+        border-color: #1a1a1a;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .contact-btn {
+        min-height: 48px;
+        padding: 16px 32px;
+    }
+    
+    .why-card,
+    .proof-metric,
+    .term-card,
+    .strategy-card {
+        min-height: 48px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .why-card:hover,
+    .proof-metric:hover,
+    .term-card:hover,
+    .strategy-card:hover,
+    .timeline-content:hover,
+    .state-box:hover {
+        transform: none;
+    }
+}
