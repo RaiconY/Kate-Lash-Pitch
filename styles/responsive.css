@@ -458,16 +458,16 @@
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     body {
-        background: #1a1a1a;
-        color: #e0e0e0;
+        background: #ffffff;
+        color: #6b5b54;
     }
     
     .light-bg {
-        background: #1a1a1a;
+        background: #ffffff;
     }
     
     .alt-bg {
-        background: #2a2a2a;
+        background: #faf8f6;
     }
     
     .why-card,
@@ -479,19 +479,19 @@
     .about-me-box,
     .currency-advantage-card,
     .state-box {
-        background: #2a2a2a;
-        border-color: #404040;
+        background: #ffffff;
+        border-color: #f0e8e0;
     }
     
     .growth-visual {
-        background: #2a2a2a;
+        background: #faf8f6;
     }
     
     p, .why-desc, .proof-label, .about-stat-label {
-        color: #b0b0b0;
+        color: #8a7a70;
     }
     
     h1, h2, h3, .why-label, .timeline-content h3 {
-        color: #e0e0e0;
+        color: #6b5b54;
     }
 }
