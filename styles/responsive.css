@@ -512,42 +512,6 @@
     }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    body {
-        background: #1a1a1a;
-        color: #f0f0f0;
-    }
-    
-    .light-bg {
-        background: #1a1a1a;
-    }
-    
-    .alt-bg {
-        background: #222;
-    }
-    
-    .why-card,
-    .proof-metric,
-    .term-card,
-    .timeline-content,
-    .strategy-card,
-    .info-card,
-    .about-me-box,
-    .currency-advantage-card,
-    .state-box {
-        background: #2a2a2a;
-        color: #f0f0f0;
-    }
-    
-    .timeline::before {
-        background: linear-gradient(to bottom, #333 0%, #d4b39f 50%, #333 100%);
-    }
-    
-    .timeline-dot {
-        border-color: #1a1a1a;
-    }
-}
 
 /* Touch device optimizations */
 @media (hover: none) and (pointer: coarse) {
