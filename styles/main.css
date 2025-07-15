@@ -999,16 +999,17 @@ li:hover:before {
 
 /* Content width constraints */
 .content-section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 clamp(20px, 4vw, 40px);
     text-align: center;
 }
 
 .content-section .element-spacing {
-    max-width: 800px;
+    max-width: 900px;
     margin: clamp(24px, 4vw, 40px) auto 0;
     text-align: center;
+    padding: 0;
 }
 
 .wide-content {
