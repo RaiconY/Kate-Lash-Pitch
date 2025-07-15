@@ -81,12 +81,14 @@
     
     /* CTA section mobile */
     .cta-content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-items: center;
         text-align: center;
         gap: clamp(32px, 5vw, 40px);
     }
     
     .cta-text {
+        align-items: center;
         text-align: center;
     }
     
@@ -122,12 +124,14 @@
     
     /* CTA section tablets */
     .cta-content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-items: center;
         text-align: center;
         gap: clamp(36px, 5vw, 44px);
     }
     
     .cta-text {
+        align-items: center;
         text-align: center;
     }
     
@@ -137,9 +141,8 @@
     }
     
     .contact-buttons {
-        justify-content: center;
-        max-width: 400px;
-        margin: 0 auto;
+        justify-items: center;
+        max-width: 350px;
     }
 }
 
