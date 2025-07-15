@@ -1001,7 +1001,14 @@ li:hover:before {
 .content-section {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 clamp(16px, 3vw, 32px);
+    padding: 0;
+    text-align: center;
+}
+
+.content-section .element-spacing {
+    max-width: 800px;
+    margin: clamp(24px, 4vw, 40px) auto 0;
+    text-align: center;
 }
 
 .wide-content {
