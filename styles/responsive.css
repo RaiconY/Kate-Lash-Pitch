@@ -5,32 +5,38 @@
     .terms-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+        justify-items: center;
     }
     
     .why-cards {
         grid-template-columns: 1fr;
         gap: 30px;
+        justify-items: center;
     }
     
     .proof-metrics {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        justify-items: center;
     }
     
     .strategy-cards {
         grid-template-columns: 1fr;
         gap: 30px;
+        justify-items: center;
     }
     
     .about-stats {
         grid-template-columns: 1fr;
         gap: 30px;
+        justify-items: center;
     }
     
     .growth-visual {
         grid-template-columns: 1fr;
         padding: 40px 30px;
         gap: 30px;
+        justify-items: center;
     }
     
     .arrow {
@@ -75,22 +81,26 @@
     .proof-metrics {
         grid-template-columns: 1fr;
         gap: 20px;
+        justify-items: center;
     }
     
     .strategy-cards {
         grid-template-columns: 1fr;
         gap: 20px;
+        justify-items: center;
     }
     
     .about-stats {
         grid-template-columns: 1fr;
         gap: 30px;
+        justify-items: center;
     }
     
     .growth-visual {
         grid-template-columns: 1fr;
         padding: 30px 20px;
         gap: 30px;
+        justify-items: center;
     }
     
     .state-box {
@@ -110,6 +120,7 @@
     .timeline-item {
         grid-template-columns: 1fr;
         margin-bottom: 30px;
+        justify-items: center;
     }
     
     .timeline-dot {
@@ -175,10 +186,13 @@
     .contact-buttons {
         flex-direction: column;
         gap: 15px;
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
     }
     
     .contact-btn {
-        width: 100%;
+        width: 280px;
         padding: 16px 30px;
     }
 }
@@ -232,10 +246,13 @@
         flex-direction: column;
         width: 100%;
         gap: 12px;
+        align-items: center;
+        max-width: 280px;
+        margin: 0 auto;
     }
     
     .contact-btn {
-        width: 100%;
+        width: 260px;
         padding: 14px 20px;
         font-size: 16px;
     }

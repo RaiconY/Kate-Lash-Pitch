@@ -37,13 +37,15 @@ h2 {
     line-height: 1.1;
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
 h2::after {
     content: '';
     position: absolute;
     bottom: -12px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
     height: 2px;
     background: #d4b39f;
@@ -59,6 +61,7 @@ h3 {
     font-weight: 400;
     margin-bottom: 20px;
     color: #d4b39f;
+    text-align: center;
 }
 
 p {
@@ -67,6 +70,7 @@ p {
     margin-bottom: 32px;
     color: #5a5047;
     line-height: 1.5;
+    text-align: center;
 }
 
 p.compact {
@@ -85,6 +89,7 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
+    text-align: center;
 }
 
 .container {
@@ -93,6 +98,7 @@ section {
     margin: 0 auto;
     opacity: 0;
     animation: fadeIn 0.8s ease-out 0.3s forwards;
+    text-align: center;
 }
 
 /* Background variations */
@@ -275,6 +281,7 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+    text-align: center;
 }
 
 .strategy-hero-card {
@@ -320,6 +327,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    justify-items: center;
 }
 
 .strategy-card {
@@ -359,6 +367,9 @@ section {
     text-align: center;
     border: 1px solid #f0e8e0;
     margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-card p {
@@ -374,6 +385,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin: 60px 0;
+    justify-items: center;
 }
 
 .proof-metric {
@@ -415,6 +427,10 @@ section {
     border: 1px solid #f0e8e0;
     position: relative;
     overflow: hidden;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-me-box::before {
@@ -433,6 +449,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin-top: 40px;
+    justify-items: center;
 }
 
 .about-stat {
@@ -464,6 +481,10 @@ section {
     background: #faf6f2;
     border-radius: 16px;
     box-shadow: inset 0 2px 10px rgba(212, 179, 159, 0.08);
+    justify-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .state-box {
@@ -580,6 +601,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 60px;
+    justify-items: center;
 }
 
 .term-card {
@@ -629,6 +651,9 @@ section {
     text-align: center;
     box-shadow: 0 5px 20px rgba(212, 179, 159, 0.08);
     border: 1px solid #f0e8e0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .currency-advantage-card h3 {
@@ -704,6 +729,9 @@ section {
 /* Lists */
 ul {
     list-style: none;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 li {
@@ -713,6 +741,7 @@ li {
     position: relative;
     font-weight: 300;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 li:before {
@@ -741,6 +770,9 @@ li:hover:before {
 .client-section {
     margin: 80px 0;
     text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .client-section h3 {
@@ -781,10 +813,14 @@ li:hover:before {
     margin-top: 60px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(212, 179, 159, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-content {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .about-content p {
@@ -792,16 +828,19 @@ li:hover:before {
     color: #5a5047;
     margin-bottom: 20px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .about-footer {
     margin-top: 40px;
     padding-top: 30px;
     border-top: 1px solid #f0e8e0;
+    text-align: center;
 }
 
 .about-footer p {
     font-size: 18px;
     color: #7a6f63;
     margin-bottom: 12px;
+    text-align: center;
 }
