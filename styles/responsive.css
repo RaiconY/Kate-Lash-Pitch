@@ -81,9 +81,9 @@
     
     /* CTA section mobile */
     .cta-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
-        gap: clamp(24px, 4vw, 32px);
+        gap: clamp(32px, 5vw, 40px);
     }
     
     .cta-text {
@@ -122,8 +122,9 @@
     
     /* CTA section tablets */
     .cta-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
+        gap: clamp(36px, 5vw, 44px);
     }
     
     .cta-text {
@@ -133,6 +134,12 @@
     .cta-section h2,
     .cta-section p {
         text-align: center;
+    }
+    
+    .contact-buttons {
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
 
