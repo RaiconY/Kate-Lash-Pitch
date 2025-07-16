@@ -1032,6 +1032,7 @@ li:hover:before {
 
 .element-spacing {
     margin: clamp(24px, 4vw, 40px) 0;
+    margin-bottom: clamp(40px, 6vw, 60px);
 }
 
 .small-spacing {
