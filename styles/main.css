@@ -1003,12 +1003,20 @@ li:hover:before {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-section .element-spacing {
     max-width: 800px;
     margin: clamp(24px, 4vw, 40px) auto 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .wide-content {
