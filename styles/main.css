@@ -1027,7 +1027,7 @@ li:hover:before {
 /* Исправление выравнивания секции "Почему это реально" */
 .content-section.element-spacing {
     max-width: 800px;
-    margin: clamp(40px, 5vw, 60px) auto;
+    margin: clamp(40px, 5vw, 60px) auto clamp(60px, 8vw, 100px);
     padding: 0 clamp(20px, 4vw, 40px);
     text-align: center;
     display: flex;
