@@ -886,8 +886,8 @@ section {
 }
 
 .founder-photo {
-    width: clamp(160px, 20vw, 220px);
-    height: clamp(200px, 25vw, 280px);
+    width: clamp(320px, 40vw, 440px);
+    height: clamp(400px, 50vw, 560px);
     object-fit: cover;
     border-radius: 12px;
     box-shadow: none;
