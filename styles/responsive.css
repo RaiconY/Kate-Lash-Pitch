@@ -208,6 +208,14 @@
     }
 }
 
+/* Исправление направления стрелки для мобильных */
+@media (max-width: 768px) {
+    .growth-visual .arrow {
+        transform: rotate(90deg) !important;
+        margin: clamp(12px, 2vw, 16px) 0 !important;
+    }
+}
+
 /* Landscape orientation adjustments */
 @media (max-height: 600px) and (orientation: landscape) {
     section {
