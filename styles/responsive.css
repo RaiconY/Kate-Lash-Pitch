@@ -101,6 +101,11 @@
         width: clamp(100px, 25vw, 140px);
         height: clamp(130px, 32vw, 180px);
     }
+    
+    .founder-photo-hero {
+        width: clamp(195px, 45vw, 260px);
+        height: clamp(247px, 58vw, 325px);
+    }
 }
 
 /* Small tablets (481px - 768px) */
