@@ -46,24 +46,7 @@ function initContactButtons() {
     
     contactButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const buttonText = this.textContent.toLowerCase();
-            let message = encodeURIComponent('Привет! Меня заинтересовал ваш проект Lash Studio Pattaya. Можем обсудить детали инвестиций?');
-            
-            switch(buttonText) {
-                case 'whatsapp':
-                    // Replace with actual WhatsApp number
-                    window.open(`https://wa.me/66123456789?text=${message}`, '_blank');
-                    break;
-                case 'telegram':
-                    // Replace with actual Telegram username
-                    window.open(`https://t.me/your_telegram_username`, '_blank');
-                    break;
-                case 'позвонить':
-                    window.open('tel:+66123456789');
-                    break;
-            }
+            // Link will handle navigation, just add click animation
             
             // Add click animation
             this.style.transform = 'scale(0.95)';

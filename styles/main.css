@@ -929,11 +929,10 @@ section {
 }
 
 .contact-buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: clamp(16px, 2vw, 20px);
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     position: relative;
     z-index: 1;
 }
