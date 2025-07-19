@@ -879,7 +879,7 @@ section {
     grid-template-columns: auto 1fr;
     gap: clamp(40px, 6vw, 60px);
     align-items: center;
-    justify-items: start;
+    justify-items: center;
     max-width: 900px;
     margin: 0 auto;
     position: relative;
@@ -909,8 +909,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
+    text-align: center;
 }
 
 .cta-section h2 {
