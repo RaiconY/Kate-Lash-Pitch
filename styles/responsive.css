@@ -103,8 +103,8 @@
     }
     
     .founder-photo-hero {
-        width: clamp(195px, 45vw, 260px);
-        height: clamp(247px, 58vw, 325px);
+        width: clamp(280px, 65vw, 350px);
+        height: clamp(350px, 80vw, 440px);
     }
 }
 
