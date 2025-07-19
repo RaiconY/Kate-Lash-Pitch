@@ -114,7 +114,7 @@ section {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 clamp(20px, 4vw, 40px);
+    padding: 0 clamp(20px, 4vw, 0px);
 }
 
 .grid-1 { grid-template-columns: 1fr; }
