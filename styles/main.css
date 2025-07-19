@@ -627,6 +627,11 @@ section {
     .growth-visual {
         flex-direction: row;
         justify-content: space-between;
+    
+    .grid-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
     }
 }
 .state-box {
