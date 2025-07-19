@@ -124,7 +124,8 @@ section {
 
 /* Добавить отступ после карточек с метриками */
 .alt-bg .grid-container.grid-3 {
-    margin-bottom: clamp(40px, 5vw, 60px);
+    margin-top: clamp(40px, 5vw, 60px);
+    margin-bottom: 0;
 }
 
 /* Responsive grid adjustments */
