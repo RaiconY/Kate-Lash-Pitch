@@ -906,8 +906,8 @@ section {
 
 /* CTA section */
 .cta-section {
-    background: #d4b39f;
-    color: white;
+    background: #ffffff;
+    color: #6b5b54;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -921,7 +921,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+    background: none;
 }
 
 .cta-content {
@@ -955,14 +955,14 @@ section {
 }
 
 .cta-section h2 {
-    color: white;
+    color: #6b5b54;
     margin-bottom: 24px;
     position: relative;
     z-index: 1;
 }
 
 .cta-section p {
-    color: rgba(255,255,255,0.95);
+    color: #8a7a70;
     font-size: clamp(18px, 3vw, 24px);
     margin-bottom: clamp(40px, 6vw, 50px);
     position: relative;
@@ -981,15 +981,15 @@ section {
 .contact-btn {
     display: inline-block;
     padding: clamp(14px, 2vw, 18px) clamp(32px, 4vw, 40px);
-    background: rgba(255,255,255,0.2);
-    color: white;
+    background: #000000;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 12px;
     font-size: clamp(16px, 2vw, 18px);
     font-weight: 500;
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: none;
+    border: 1px solid #000000;
     flex: 1;
     min-width: 140px;
     min-height: 50px;
@@ -1000,9 +1000,9 @@ section {
 }
 
 .contact-btn:hover {
-    background: rgba(255,255,255,0.3);
+    background: #333333;
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
 }
 
 /* Lists */
