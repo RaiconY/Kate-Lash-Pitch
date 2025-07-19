@@ -930,10 +930,10 @@ section {
 
 .contact-buttons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: clamp(20px, 3vw, 24px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 2vw, 20px);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
     z-index: 1;
 }
