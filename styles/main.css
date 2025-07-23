@@ -965,9 +965,6 @@ section {
     padding-bottom: clamp(60px, 10vw, 160px);
 }
 
-.cta-section::before {
-    display: none; /* Добавить эту строку */
-}
 
 .cta-content {
     display: flex;
