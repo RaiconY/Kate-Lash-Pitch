@@ -811,11 +811,7 @@ section {
 }
 
 .timeline-item:nth-child(even) {
-    direction: rtl;
-}
-
-.timeline-item:nth-child(even) > * {
-    direction: ltr;
+    justify-items: end;
 }
 
 .timeline-dot {
