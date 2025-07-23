@@ -30,6 +30,15 @@
         margin-top: clamp(32px, 6vw, 40px);
     }
     
+    .hero-photo {
+        justify-self: center;
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(12px, 2vw, 16px);
+    }
+    
     /* Grid adjustments */
     .grid-2, .grid-3, .grid-4 {
         grid-template-columns: 1fr;
