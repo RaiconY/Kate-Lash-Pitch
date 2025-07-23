@@ -962,7 +962,7 @@ section {
     position: relative;
     overflow: hidden;
     min-height: auto;
-    padding-bottom: clamp(120px, 16vw, 240px);
+    padding-bottom: clamp(60px, 10vw, 160px);
 }
 
 .cta-section::before {
