@@ -193,7 +193,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(1px);
+    gap: 1px;
 }
 
 .founder-photo-hero {
