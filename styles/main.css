@@ -291,7 +291,7 @@ section {
 .investment-highlight p {
     font-size: clamp(18px, 2.5vw, 22px);
     color: #6b5b54;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     line-height: 1.6;
     text-align: center;
     position: relative;
