@@ -734,7 +734,7 @@ section {
 }
 .state-box {
     text-align: center;
-    padding: clamp(24px, 4vw, 32px);
+    padding: clamp(24px, 4vw, 32px) clamp(24px, 4vw, 32px) clamp(14px, 2.4vw, 19px) clamp(24px, 4vw, 32px);
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(212, 179, 159, 0.12);
