@@ -214,7 +214,7 @@ section {
 @media (max-width: 768px) {
     .hero-content {
         grid-template-columns: 1fr;
-        gap: clamp(32px, 5vw, 40px);
+        gap: clamp(12px, 5vw, 12px);
         text-align: center;
     }
     
