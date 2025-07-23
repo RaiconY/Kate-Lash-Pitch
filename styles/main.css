@@ -437,7 +437,7 @@ section {
 
 .secret-box h3 {
     color: white;
-    font-size: clamp(24px, 3vw, 28px);
+    font-size: clamp(28px, 4vw, 36px);
     font-weight: 300;
     margin-bottom: 24px;
     position: relative;
@@ -446,7 +446,7 @@ section {
 
 .secret-box p {
     color: white;
-    font-size: clamp(16px, 2.5vw, 20px);
+    font-size: clamp(20px, 3vw, 26px);
     line-height: 1.6;
     margin-bottom: 16px;
     position: relative;
