@@ -401,6 +401,7 @@
     .secret-box,
     .strategy-hero-card,
     .cta-section {
+        padding-bottom: clamp(60px, 15vw, 100px) !important; /* Еще больше на мобильных */
         border: 2px solid #fff;
     }
 }
