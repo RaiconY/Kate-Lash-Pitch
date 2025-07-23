@@ -250,12 +250,14 @@ section {
 }
 
 .subtitle {
-    font-size: clamp(18px, 2.5vw, 24px);
-    font-weight: 300;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 200;
     color: #7f8c8d;
     margin-bottom: 40px;
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.4s forwards;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
 }
 
 .accent-line {
