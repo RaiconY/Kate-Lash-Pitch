@@ -291,12 +291,16 @@ section {
 .investment-highlight p {
     font-size: clamp(18px, 2.5vw, 22px);
     color: #6b5b54;
-    margin: 0;
+    margin-bottom: 12px;
     line-height: 1.6;
     text-align: center;
     position: relative;
     z-index: 1;
     font-weight: 400;
+}
+
+.investment-highlight p:last-child {
+    margin-bottom: 0;
 }
 
 .investment-highlight strong {
