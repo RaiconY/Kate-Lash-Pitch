@@ -193,6 +193,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: clamp(8px, 1vw, 16px);
 }
 
 .founder-photo-hero {
@@ -321,7 +322,7 @@ section {
 }
 
 .hero-info {
-    margin-top: 48px;
+    
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.8s forwards;
 }
