@@ -27,7 +27,7 @@
     }
     
     .hero-info {
-        margin-top: clamp(8px, 1.5vw, 12px); /* Уменьшили с 32-40px до 8-12px */
+
     }
     
     .hero-photo {
@@ -277,7 +277,7 @@
     }
     
     .hero-info {
-        margin-top: clamp(24px, 4vw, 32px);
+
     }
 }
 
