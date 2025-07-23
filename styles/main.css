@@ -258,6 +258,29 @@ section {
     animation: fadeInUp 1s ease-out 0.4s forwards;
 }
 
+.investment-highlight {
+    background: rgba(212, 179, 159, 0.1);
+    border: 1px solid rgba(212, 179, 159, 0.3);
+    border-radius: 12px;
+    padding: clamp(20px, 3vw, 24px);
+    margin: clamp(24px, 4vw, 32px) 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+.investment-highlight p {
+    font-size: clamp(16px, 2.2vw, 20px);
+    color: #6b5b54;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.investment-highlight strong {
+    color: #d4b39f;
+    font-weight: 600;
+}
+
 .accent-line {
     width: 60px;
     height: 2px;
