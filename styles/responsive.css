@@ -115,6 +115,15 @@
         width: clamp(280px, 65vw, 350px);
         height: clamp(350px, 80vw, 440px);
     }
+
+    .main-amount {
+        font-size: clamp(28px, 6vw, 36px);
+    }
+    
+    .period-text {
+        font-size: clamp(12px, 3vw, 14px);
+        margin-top: 2px;
+    }
 }
 
 /* Small tablets (481px - 768px) */
