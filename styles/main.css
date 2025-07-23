@@ -323,7 +323,7 @@ section {
 }
 
 .hero-info {
-    
+    margin-top: clamp(2.8px, 0.525vw, 4.2px);
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.8s forwards;
 }
