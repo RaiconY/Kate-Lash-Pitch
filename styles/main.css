@@ -193,6 +193,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: clamp(8px, 1vw, 16px)
     
 }
 
